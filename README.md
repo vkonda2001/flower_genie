@@ -1,5 +1,5 @@
 # flower_genie
-Flower arrangement recommendation system for local flower shop
+Flower Genie is a survey tool used to help customers decide on a certain floral arrangement or flowers at a local flower shop based on their answers to a short survey. 
 
 ## setup
 1. Create python env
