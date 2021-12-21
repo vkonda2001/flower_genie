@@ -32,14 +32,26 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid black;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #37af65;
 }
+
+body{
+  background: #37af65;
+}
+.image-wrapper {
+      width: 10rem;
+      height: 6rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
 </style>
 </head>
 <body>
@@ -49,15 +61,21 @@ tr:nth-child(even) {
 
 <table>
   <tr>
-    <th>ArrangementID</th>
-    <th>Flowers</th>
+    <th>Flower 1</th>
+    <th>Flower 2</th>
+    <th>Flower 3</th>
+    <th>Image 1</th>
+    <th>Image 2</th>
+    <th>Image 3</th>
   </tr>
-  {% for item in items %}
   <tr>
-    <td>{{item['arrangementID']}}</td>
-    <td>{{item['flrName']}}</td>
+    <td>Chrysanthemum 'Powder Puff'</td>
+    <td>Hemerocallis 'Suburban John E. Watts'</td>
+    <td>Chrysanthemum 'Rynoon'</td>
+    <td><img class="image-wrapper" src="https://garden.org/pics/2015-11-25/treehugger/0e2b42-300.jpg" alt="image" /></td>
+    <td><img class="image-wrapper" src="https://garden.org/pics/2013-06-02/floota/ed1001-300.jpg" alt="image" /></td>
+    <td><img class="image-wrapper" src="https://candidegardening.com/img/17197b37-16eb-4ddb-bae7-07f933088e21/cropped/600x480" alt="image" /></td>
   </tr>
-  {% endfor %}
    <!-- <tr>
     <td>Centro comercial Moctezuma</td>
     <td>Francisco Chang</td>
